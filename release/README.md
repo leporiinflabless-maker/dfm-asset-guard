@@ -1,16 +1,15 @@
-# dfm-asset-guard · v1.0.1
+# dfm-asset-guard · v1.0.2
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-09）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard
 
-## v1.0.1 更新
+## v1.0.2 更新
 
-- **解压即用**：插件（DeltaGuard.dll）支持**相对路径**查找并拉起守卫服务
-  （`<包根>\dfm-guard\dfm-guard.exe`、插件同目录等，按顺序探测），无需再设置 `DFM_GUARD_ROOT` 环境变量；
-- **守卫服务相对定位**：`ProjectRoot` 自动探测（环境变量 → 包内相对位置 → 开发路径），
-  `service_config.json` 优先取与 `dfm-guard.exe` 同目录；
-- **修复发布配置文件缺失 UTF-8 BOM** 导致的启动异常（含中文的配置需 BOM，现已随包提供）；
-- 其余功能同 v1.0.0。
+- **检查更新接入本项目 Gitee 更新源**（`version_utf8.info`），版本号规范为 **1.0.x**（当前 1.0.2）；
+- 版本比较改为按**数值逐段比较**（如 1.0.10 比 1.0.9 新）；
+- 修复 HTTP 缓存可能导致检查更新获取到**旧版本信息**的问题（请求附加时间戳参数）；
+- **启动时自动检查更新**（可在「设置 - 常规」中关闭）；检测到新版本时显示更新内容，可一键前往 Gitee 下载页；
+- 其余功能同 v1.0.1。
 
 ## 包内容
 
@@ -30,7 +29,7 @@ dfm-guard/
 
 | 文件 | 大小 | SHA256 |
 |---|---|---|
-| `DFMMonitor\DFMMonitor.exe` | 1,907,712 B | `bfade8dee55038a5166f3c19025b45dd9fa21b8d1762734248ed60be81550e1a` |
+| `DFMMonitor\DFMMonitor.exe` | 1,904,640 B | `02e11579cd3bbce224df812dd459d89d2e7e1f5695ac93a5322be1e4137f9f5a` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 66,560 B | `6ebd9c9dc65940b65ab0976b29699b3e339bdfe672a73fecf81061320a70cfee` |
 | `dfm-guard\dfm-guard.exe` | 380,416 B | `8787d7d0277f1da9761a91c9e6592ea6eada1e9a0d8afb67617b3b1a98afe866` |
 
@@ -39,7 +38,8 @@ dfm-guard/
 ### 1. DFMMonitor（监控面板）
 - 将 `DFMMonitor/` 解压到任意目录（**不要放在系统 Temp 目录**，否则配置会转存到 `%APPDATA%\TrafficMonitor`），双击 `DFMMonitor.exe`；
 - 悬浮窗显示 `资产 / 哈夫币 / 状态`，宽度随内容自动调整；任务栏窗口同步显示；
-- 首次启动窗口自动出现，拖动到合适位置即可（位置自动记忆）。
+- 首次启动窗口自动出现，拖动到合适位置即可（位置自动记忆）；
+- **检查更新**：启动时自动检查（可关闭），或右键菜单 →「检查更新」手动检查；发现新版本将显示更新内容并可前往 Gitee 下载。
 
 ### 2. dfm-guard（守卫服务）
 - 将 `service_config.example.json` 复制为 `service_config.json`（与 dfm-guard.exe 同目录）并填写：
@@ -53,5 +53,6 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.2**（2026-10-09）：检查更新接入 Gitee 更新源 + 数值版本比较 + 缓存修复 + 启动自检；
 - **v1.0.1**（2026-10-09）：解压即用（插件/服务相对路径）+ 发布配置修复；
 - **v1.0.0**（2026-10-09）：首个正式版（DFMMonitor 改名/自适应/菜单精简；服务器代发邮件；冻结/解冻执行）。
