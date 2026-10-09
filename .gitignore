@@ -1,0 +1,4 @@
+﻿# 仅跟踪编译产物（release/）与本文件；工作区其余内容不入库
+/*
+!/.gitignore
+!/release/
