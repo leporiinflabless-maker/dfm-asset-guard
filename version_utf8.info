@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.2</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>检查更新已接入本项目 Gitee 仓库（gitee.com/mhwpub/dfm-asset-guard）。\n版本号规范为 1.0.x（当前 1.0.2）。\n版本比较改为按数值逐段比较（如 1.0.10 比 1.0.9 新）。\n检测到新版本时显示更新内容，并可直接前往 Gitee 下载页。</contents_zh_cn>
-		<contents_en>Update check now uses the project's Gitee repository (gitee.com/mhwpub/dfm-asset-guard).\nVersion numbering normalized to 1.0.x (current: 1.0.2).\nNumeric segment-based version comparison (e.g. 1.0.10 > 1.0.9).\nUpdate notes are shown and the Gitee download page can be opened directly.</contents_en>
-		<contents_zh_tw>檢查更新已接入本專案 Gitee 倉庫（gitee.com/mhwpub/dfm-asset-guard）。\n版本號規範為 1.0.x（目前 1.0.2）。\n版本比較改為按數值逐段比較（如 1.0.10 比 1.0.9 新）。\n偵測到新版本時顯示更新內容，並可直接前往 Gitee 下載頁。</contents_zh_tw>
+		<contents_zh_cn>新增猛号网走马灯广告位：悬浮窗与任务栏窗口每 30 分钟轮播 3 遍，单击窗口直达 mhw.pub。\n更新源移除 GitHub，仅保留本项目 Gitee 仓库。\n其余细节优化。</contents_zh_cn>
+		<contents_en>Added the Menghao marquee notice: shown 3 times every 30 minutes in the floating window and taskbar window; a single click opens mhw.pub.\nRemoved the GitHub update source; only the project Gitee repository is used.\nOther minor improvements.</contents_en>
+		<contents_zh_tw>新增猛號網跑馬燈廣告：懸浮窗與工作列視窗每 30 分鐘輪播 3 次，單擊視窗直達 mhw.pub。\n更新來源移除 GitHub，僅保留本專案 Gitee 倉庫。\n其餘細節優化。</contents_zh_tw>
 	</update_contents>
 </root>
