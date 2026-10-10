@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.3</version>
+	<version>1.0.4</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.3</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.4</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>新增猛号网走马灯广告位：悬浮窗与任务栏窗口每 30 分钟轮播 3 遍，单击窗口直达 mhw.pub。\n更新源移除 GitHub，仅保留本项目 Gitee 仓库。\n其余细节优化。</contents_zh_cn>
-		<contents_en>Added the Menghao marquee notice: shown 3 times every 30 minutes in the floating window and taskbar window; a single click opens mhw.pub.\nRemoved the GitHub update source; only the project Gitee repository is used.\nOther minor improvements.</contents_en>
-		<contents_zh_tw>新增猛號網跑馬燈廣告：懸浮窗與工作列視窗每 30 分鐘輪播 3 次，單擊視窗直達 mhw.pub。\n更新來源移除 GitHub，僅保留本專案 Gitee 倉庫。\n其餘細節優化。</contents_zh_tw>
+		<contents_zh_cn>悬浮窗右键菜单新增「三角洲资产监控」子菜单（含冻结/解冻等快捷命令）。\n插件设置：采集频率最低 3 秒；总资产/哈夫币显示 M/K 单位；阈值上限 300M。\n守卫服务：登录态自动保活与失效邮件告警，冻结执行更稳定。</contents_zh_cn>
+		<contents_en>Added the DeltaGuard submenu to the floating window context menu (freeze/unfreeze shortcuts).\nPlugin: minimum 3s collect interval; M/K unit display; 300M threshold cap.\nGuard service: automatic session keep-alive and expiry alerts; more reliable freeze.</contents_en>
+		<contents_zh_tw>懸浮窗右鍵選單新增「三角洲資產監控」子選單（含凍結/解凍等快捷命令）。\n外掛設定：採集頻率最低 3 秒；總資產/哈夫幣顯示 M/K 單位；閾值上限 300M。\n守衛服務：登入態自動保活與失效郵件告警，凍結執行更穩定。</contents_zh_tw>
 	</update_contents>
 </root>
