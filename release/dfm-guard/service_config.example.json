@@ -51,7 +51,7 @@
     "game_id": 2706
   },
   "paths": {
-    "collector_root": "F:\\workspace\\dfm-delta-collector",
+    "collector_root": "",
     "gamesafe_root": "",
     "collector_config": "",
     "gamesafe_cookies": ""
