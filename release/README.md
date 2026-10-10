@@ -1,7 +1,15 @@
-# dfm-asset-guard · v1.0.17
+# dfm-asset-guard · v1.0.18
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.18 更新
+
+- **清除剩余写死的开发机路径**（全组件排查后）：
+  - 命令行工具的默认采集配置（`probe` / `refresh-cookie` 等）改为 exe 同目录；
+  - 守卫与插件的「根目录兜底」改为程序自身目录（不再回落 `F:\...`）；
+  - 移除插件中历史遗留的 Python 启动回退（纯 C++）；
+- 其余功能同 v1.0.17。
 
 ## v1.0.17 更新
 
@@ -102,8 +110,8 @@ dfm-guard/
 | 文件 | 大小 | SHA256 |
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,908,736 B | `12124112c81dd22a0f4618a444879d260385b88c0d19afc8bf7a4bdc96574c51` |
-| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `77c5e296ba9b7bb725ddad566e09a9a3cdab8a7e196f131fe5c5e5a48eb4a23b` |
-| `dfm-guard\dfm-guard.exe` | 415,232 B | `f329e632876b447213cb5910bd918ac452c54707349bffd61e2ff8453a3b1883` |
+| `DFMMonitor\plugins\DeltaGuard.dll` | 66,048 B | `36e9b06f4f3b3c33f5ef04dd60fb3d93bce64b7d269362d82f0f548a0d377969` |
+| `dfm-guard\dfm-guard.exe` | 414,720 B | `274ccdef95f7d8966a63bcd96e1f620acb8c628f4939207677fb5cd3302ca23d` |
 | `dfm-guard\dfm-authcap.dll` | 276,992 B | `70502933215788747f9623b229d5692e6b589086b7f4c7cc0329f2d316f571d1` |
 
 ## 使用说明
@@ -133,6 +141,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.18**（2026-10-10）：清除剩余写死的开发机路径（CLI 默认配置 / 根目录兜底 / 去除 Python 回退）；
 - **v1.0.17**（2026-10-10）：路径字段默认值修正（缺失/留空都自包含，不再回落开发机路径）；
 - **v1.0.16**（2026-10-10）：修复发布版设置保存失败（保存路径与启动加载一致）；
 - **v1.0.15**（2026-10-10）：微信登录采集修复（保留 token_time 字段 + 原样组成为首选）；

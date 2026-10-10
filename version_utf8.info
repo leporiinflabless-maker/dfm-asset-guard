@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.17</version>
+	<version>1.0.18</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.17</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.18</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>配置路径默认值修正：collector_root / gamesafe_root 不填、留空或缺失都自动使用程序同目录（不再回落开发机路径），普通使用无需填写。\n操作说明同步更新。</contents_zh_cn>
-		<contents_en>Path-field defaults fixed: collector_root / gamesafe_root omitted, empty, or missing all resolve to the executable's own folder (no dev-machine fallback). Manual updated.</contents_en>
-		<contents_zh_tw>設定路徑預設值修正：collector_root / gamesafe_root 不填、留空或缺漏都自動使用程式同目錄（不再回落開發機路徑），一般使用無需填寫。\n操作說明同步更新。</contents_zh_tw>
+		<contents_zh_cn>清除剩余写死的开发机路径：CLI 默认采集配置、守卫/插件根目录兜底均改为程序自身目录；移除 Python 启动回退（纯 C++）。\n操作说明同步更新。</contents_zh_cn>
+		<contents_en>Removed remaining hard-coded dev-machine paths: CLI default collector config and root-directory fallbacks now use the program's own folder; legacy Python launcher fallback removed (pure C++). Manual updated.</contents_en>
+		<contents_zh_tw>清除剩餘寫死的開發機路徑：CLI 預設採集設定、守衛/外掛根目錄兜底均改為程式自身目錄；移除 Python 啟動回退（純 C++）。\n操作說明同步更新。</contents_zh_tw>
 	</update_contents>
 </root>
