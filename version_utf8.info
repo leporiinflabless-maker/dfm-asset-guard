@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.7</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.8</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>新增「腾讯游戏安全中心」登录态走马灯提醒：未获取到登录态时悬浮窗与任务栏滚动提醒，\n按「重新授权」流程即可恢复；多条提醒交替显示。\n操作说明文档同步更新。</contents_zh_cn>
-		<contents_en>New marquee alert when the Tencent GameSafe login state is missing; the floating/taskbar windows scroll a reminder; use 'Re-authorize' to recover. Multiple alerts alternate.\nManual updated accordingly.</contents_en>
-		<contents_zh_tw>新增「騰訊遊戲安全中心」登入態跑馬燈提醒：未取得登入態時懸浮窗與工作列滾動提醒，\n依「重新授權」流程即可恢復；多條提醒交替顯示。\n操作說明文件同步更新。</contents_zh_tw>
+		<contents_zh_cn>微信数据目录自动定位兜底：标准/旧版/扫描三级探测（与微信安装路径无关，支持 DFM_RADIUM_ROOT 指定）；\n操作说明同步更新。</contents_zh_cn>
+		<contents_en>Automatic WeChat data-directory detection with fallbacks (standard/legacy/scan; independent of the install path; DFM_RADIUM_ROOT override supported). Manual updated.</contents_en>
+		<contents_zh_tw>微信資料目錄自動定位兜底：標準/舊版/掃描三級探測（與微信安裝路徑無關，支援 DFM_RADIUM_ROOT 指定）；\n操作說明同步更新。</contents_zh_tw>
 	</update_contents>
 </root>

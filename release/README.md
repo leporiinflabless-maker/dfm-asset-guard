@@ -1,7 +1,13 @@
-# dfm-asset-guard · v1.0.7
+# dfm-asset-guard · v1.0.8
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.8 更新
+
+- 微信数据目录**自动定位兜底**：标准 `%APPDATA%\Tencent\xwechat\radium` → 兼容旧版布局 → 扫描兜底
+  （与微信安装路径无关；支持 `DFM_RADIUM_ROOT` 环境变量手动指定）；README/手册同步说明；
+- 其余功能同 v1.0.7。
 
 ## v1.0.7 更新
 
@@ -37,7 +43,7 @@ dfm-guard/
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,908,736 B | `12124112c81dd22a0f4618a444879d260385b88c0d19afc8bf7a4bdc96574c51` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `30655c8238d7d8688638c00899ec0cb97325a8396d72e8f67d7f5da2b587bc09` |
-| `dfm-guard\dfm-guard.exe` | 400,384 B | `c893cad3e5663547acb5d37755ab4463a1307bbf171cbe4fc7ae1e1db955b037` |
+| `dfm-guard\dfm-guard.exe` | 404,480 B | `36a1b3d9c0b76e1f8b77d0974d1533d3c84bd67156f0c704338b2e3bad4fe2b3` |
 | `dfm-guard\dfm-authcap.dll` | 276,992 B | `d36095b2c7002ccf0791a6dadbf24e6062d384bb2d7284ecbf4307cb75ffb296` |
 
 ## 使用说明
@@ -67,6 +73,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.8**（2026-10-10）：微信数据目录自动定位兜底；
 - **v1.0.7**（2026-10-10）：安全中心登录态走马灯提醒（多提醒交替）+ 文档更新；
 - **v1.0.6**（2026-10-10）：小程序 Cookie 走马灯提醒 + 走马灯文本截断修复；
 - **v1.0.5**（2026-10-10）：重新授权（纯 C++ 抓取）+ cookies 自包含；
