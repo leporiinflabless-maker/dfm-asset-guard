@@ -1,7 +1,14 @@
-# dfm-asset-guard · v1.0.10
+# dfm-asset-guard · v1.0.11
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.11 更新
+
+- **修复重要缺陷**：设置界面保存后，「哈夫币少于阈值」规则的**操作符可能被改写为「高于」**，
+  导致低币告警静默失效（本次已修复）；
+- **加固**：操作符未选择/非法时**不再改写规则**（插件不写入该字段、守卫忽略非法值）；
+- 其余功能同 v1.0.10。
 
 ## v1.0.10 更新
 
@@ -54,8 +61,8 @@ dfm-guard/
 | 文件 | 大小 | SHA256 |
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,908,736 B | `12124112c81dd22a0f4618a444879d260385b88c0d19afc8bf7a4bdc96574c51` |
-| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `30655c8238d7d8688638c00899ec0cb97325a8396d72e8f67d7f5da2b587bc09` |
-| `dfm-guard\dfm-guard.exe` | 404,992 B | `e67f60681e5ef03cb11a6c524d7e014cf36cd44cc73bdb76ea862ceabc1c9bde` |
+| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `77c5e296ba9b7bb725ddad566e09a9a3cdab8a7e196f131fe5c5e5a48eb4a23b` |
+| `dfm-guard\dfm-guard.exe` | 404,992 B | `914a5acbc681d95f11be2a61c18b34a86323b07af3383230508f3f68053506f7` |
 | `dfm-guard\dfm-authcap.dll` | 276,992 B | `70502933215788747f9623b229d5692e6b589086b7f4c7cc0329f2d316f571d1` |
 
 ## 使用说明
@@ -85,6 +92,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.11**（2026-10-10）：修复设置保存可能反转哈夫币规则操作符的缺陷 + 操作符校验加固；
 - **v1.0.10**（2026-10-10）：游戏冻结状态自动同步（与采集同频）；
 - **v1.0.9**（2026-10-10）：会话保活加固（每 2 分钟持续刷新）+ 重新授权组件持续驻留；
 - **v1.0.8**（2026-10-10）：微信数据目录自动定位兜底；
