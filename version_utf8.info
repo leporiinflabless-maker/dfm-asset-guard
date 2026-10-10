@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.5</version>
+	<version>1.0.6</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.5</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.6</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>新增「重新授权」：会话失效后，在微信打开一次腾讯游戏安全中心页面即可自动抓取恢复（纯 C++，无需 Python/frida）。\n插件菜单新增「重新授权（抓取微信登录态）」；cookies.json 默认保存在守卫程序同目录。\n其余同 v1.0.4。</contents_zh_cn>
-		<contents_en>New 'Re-authorize' feature: after opening the Tencent GameSafe page in WeChat once, the session is auto-captured and restored (pure C++, no Python/frida).\nNew plugin menu item 'Re-authorize'; cookies.json now defaults to the guard program directory.\nOtherwise same as v1.0.4.</contents_en>
-		<contents_zh_tw>新增「重新授權」：工作階段失效後，在微信開啟一次騰訊遊戲安全中心頁面即可自動擷取恢復（純 C++，無需 Python/frida）。\n外掛選單新增「重新授權（擷取微信登入態）」；cookies.json 預設儲存於守衛程式同目錄。\n其餘同 v1.0.4。</contents_zh_tw>
+		<contents_zh_cn>新增小程序 Cookie 走马灯提醒：未读取到「三角洲行动」小程序 Cookie 时，悬浮窗与任务栏滚动提醒，\n打开微信「三角洲行动」小程序即可自动恢复；\n修复走马灯长文本被截断的问题。</contents_zh_cn>
+		<contents_en>New mini-program cookie marquee alert: when the Delta Force mini-program cookie cannot be read, the floating/taskbar windows scroll an alert; open the mini program in WeChat to recover.\nFixed truncated long marquee text.</contents_en>
+		<contents_zh_tw>新增小程式 Cookie 跑馬燈提醒：未讀取到「三角洲行動」小程式 Cookie 時，懸浮窗與工作列滾動提醒，\n開啟微信「三角洲行動」小程式即可自動恢復；\n修正跑馬燈長文字被截斷的問題。</contents_zh_tw>
 	</update_contents>
 </root>

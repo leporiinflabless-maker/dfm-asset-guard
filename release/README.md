@@ -1,15 +1,20 @@
-# dfm-asset-guard · v1.0.5
+# dfm-asset-guard · v1.0.6
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
 
+## v1.0.6 更新
+
+- **小程序 Cookie 提醒**：未读取到「三角洲行动」微信小程序 Cookie 时，**悬浮窗与任务栏窗口以走马灯滚动提醒**——
+  打开微信「三角洲行动」小程序即可自动恢复（详见《操作说明.md》第六节）；
+- 修复走马灯**长文本被截断**的问题（改为按实际文本宽度绘制）；
+- 其余功能同 v1.0.5。
+
 ## v1.0.5 更新
 
-- **「重新授权」功能（纯 C++）**：守卫新增 `reauth` 命令，插件菜单新增「重新授权（抓取微信登录态）」；
-  会话失效后，点击后只需在微信里打开一次「腾讯游戏安全中心」页面即可自动抓取恢复——
-  **不再需要 Python / frida 工具**；
-- **抓取组件**：新增 `dfm-authcap.dll`（注入微信网络进程，挂钩 SSL 明文层，解码 HTTP/2+HPACK 提取登录凭据）；
-- **cookies 默认位置**：`cookies.json` 未配置时默认保存在 `dfm-guard.exe` 同目录（自包含，整包迁移无需改配置）；
+- **「重新授权」功能（纯 C++）**：守卫 `reauth` 命令 + 插件菜单按钮；会话失效后打开一次微信页面即可自动抓取恢复，
+  不再需要 Python / frida；
+- **cookies 默认位置**：`cookies.json` 未配置时默认保存在 `dfm-guard.exe` 同目录（自包含）；
 - 其余同 v1.0.4。
 
 ## 包内容
@@ -31,19 +36,20 @@ dfm-guard/
 
 | 文件 | 大小 | SHA256 |
 |---|---|---|
-| `DFMMonitor\DFMMonitor.exe` | 1,904,128 B | `642286645594beaf569a3bb616b212bdc16dff375142a24348e9dfd59f9a12e6` |
+| `DFMMonitor\DFMMonitor.exe` | 1,908,224 B | `779d5b3683ef58a62588eed7efd62a067afbe1f09ae26ce6297182706cd78b48` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `30655c8238d7d8688638c00899ec0cb97325a8396d72e8f67d7f5da2b587bc09` |
-| `dfm-guard\dfm-guard.exe` | 398,336 B | `f01c272784da8810d861c848e9a8dc7891219387200d6ca55defcb7b7719221e` |
+| `dfm-guard\dfm-guard.exe` | 399,360 B | `edf7b09e68065f10d8fed0fe150281d04a6c4ff59b15e8d6af62cfdc2199e2b8` |
 | `dfm-guard\dfm-authcap.dll` | 276,992 B | `d36095b2c7002ccf0791a6dadbf24e6062d384bb2d7284ecbf4307cb75ffb296` |
 
 ## 使用说明
 
-> 📖 **完整操作手册见包内《操作说明.md》**（安装、菜单、设置、重新授权步骤、微信版本依赖、常见问题）。
+> 📖 **完整操作手册见包内《操作说明.md》**（安装、菜单、设置、重新授权步骤、**Cookie 提醒**、微信版本依赖、常见问题）。
 
 ### 1. DFMMonitor（监控面板）
 - 解压到任意目录（**不要放在系统 Temp 目录**），双击 `DFMMonitor.exe`；悬浮窗/任务栏窗口显示资产、哈夫币、状态；
 - **检查更新**：启动自动检查或右键菜单 →「检查更新」（更新源为本项目 Gitee 仓库）；
-- 每 30 分钟播放 3 遍走马灯提示（单击窗口打开 https://mhw.pub）。
+- 每 30 分钟播放 3 遍走马灯提示（单击窗口打开 https://mhw.pub）；
+- **未读取到小程序 Cookie 时**：悬浮窗与任务栏以走马灯提醒，打开微信「三角洲行动」小程序即可恢复。
 
 ### 2. dfm-guard（守卫服务）
 - 复制 `service_config.example.json` 为 `service_config.json`（与 exe 同目录），填写 `email.server_token`、`email.to`；
@@ -55,13 +61,14 @@ dfm-guard/
     抓取完成后自动写入并恢复登录态（无需 Python/frida）；
   - ⚠ **微信版本依赖**：抓取组件适配 **微信 Windows 4.1.15**（XWeb/flue 运行时 25715）；
     官方下载：https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.1.15.exe
-    其他版本可能不工作；微信升级后如抓取失效，需重新定位偏移（详见《操作说明.md》第八节）。
+    其他版本可能不工作；微信升级后如抓取失效，需重新定位偏移（详见《操作说明.md》第九节）。
 
 ### 3. 组合使用
 解压整包后：先启动 `DFMMonitor.exe`（插件会自动拉起 `dfm-guard.exe`），即可看到实时数据。
 
 ## 版本
 
+- **v1.0.6**（2026-10-10）：小程序 Cookie 走马灯提醒 + 走马灯文本截断修复；
 - **v1.0.5**（2026-10-10）：重新授权（纯 C++ 抓取）+ cookies 自包含；
 - **v1.0.4**（2026-10-10）：悬浮窗插件菜单修复；M/K 显示 + 300M 上限 + 3 秒采集档；守卫登录态保活与失效告警；
 - **v1.0.3**（2026-10-09）：走马灯广告位 + 更新源移除 GitHub；
