@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.12</version>
+	<version>1.0.13</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.12</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.13</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>修复新电脑首次运行提示「config 文件读取失败」的问题：示例配置不再带本机路径；采集登录态默认与程序同目录，首次运行自动从微信创建。\n操作说明同步更新。</contents_zh_cn>
-		<contents_en>Fix: fresh-install "config file read failed" error; the sample config no longer carries machine-specific paths; the collection cookie file lives next to the executable and is auto-created from WeChat on first run. Manual updated.</contents_en>
-		<contents_zh_tw>修復新電腦首次執行提示「config 文件讀取失敗」的問題：範例設定不再帶本機路徑；採集登入態預設與程式同目錄，首次執行自動從微信建立。\n操作說明同步更新。</contents_zh_tw>
+		<contents_zh_cn>采集登录态解析兼容增强：支持微信/QQ 登录两种小程序存储格式及嵌套/双重编码；test-mmkv 增加脱敏结构输出。\n操作说明同步更新。</contents_zh_cn>
+		<contents_en>Collection cookie parsing compatibility: supports both WeChat and QQ mini-program storage shapes incl. nested/double-encoded values; masked structure dump added to test-mmkv. Manual updated.</contents_en>
+		<contents_zh_tw>採集登入態解析相容增強：支援微信/QQ 登入兩種小程式儲存格式及嵌套/雙重編碼；test-mmkv 增加去識別化結構輸出。\n操作說明同步更新。</contents_zh_tw>
 	</update_contents>
 </root>

@@ -1,7 +1,14 @@
-# dfm-asset-guard · v1.0.12
+# dfm-asset-guard · v1.0.13
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.13 更新
+
+- **采集登录态兼容增强**：`cookie` 解析兼容更多小程序存储格式（嵌套 JSON / 双重编码 / 内嵌 cookie 字符串），
+  同时适配**微信快捷登录**与 **QQ 登录**两种存储形态；
+- `test-mmkv` 新增**脱敏结构输出**（排查用，不泄露凭据）；采集失败信息附带微信离线读取的具体原因；
+- 其余功能同 v1.0.12。
 
 ## v1.0.12 更新
 
@@ -69,7 +76,7 @@ dfm-guard/
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,908,736 B | `12124112c81dd22a0f4618a444879d260385b88c0d19afc8bf7a4bdc96574c51` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `77c5e296ba9b7bb725ddad566e09a9a3cdab8a7e196f131fe5c5e5a48eb4a23b` |
-| `dfm-guard\dfm-guard.exe` | 406,016 B | `29acfed917c7fa4519b33022d26d4d91da65ed90ddbe6732f080b4c38b0a36af` |
+| `dfm-guard\dfm-guard.exe` | 411,648 B | `0b047f4f39b60ca961f4dbff3bfb43c87baa1bb821309bb5ff175b5acf1d1e50` |
 | `dfm-guard\dfm-authcap.dll` | 276,992 B | `70502933215788747f9623b229d5692e6b589086b7f4c7cc0329f2d316f571d1` |
 
 ## 使用说明
@@ -99,6 +106,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.13**（2026-10-10）：采集登录态兼容增强（微信/QQ 登录格式与嵌套编码）+ 脱敏诊断输出；
 - **v1.0.12**（2026-10-10）：新电脑「解压即用」修复（示例配置去本机路径 + 采集登录态自动创建）；
 - **v1.0.11**（2026-10-10）：修复设置保存可能反转哈夫币规则操作符的缺陷 + 操作符校验加固；
 - **v1.0.10**（2026-10-10）：游戏冻结状态自动同步（与采集同频）；
