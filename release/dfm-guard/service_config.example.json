@@ -1,59 +1,59 @@
 {
- "interval_s": 30,
- "logic": "any",
- "consecutive": 2,
- "cooldown_s": 1800,
- "action_mode": "email",
- "rules": [
-  {
-   "id": "asset_high",
-   "name": "总资产高于阈值",
-   "metric": "asset",
-   "op": ">",
-   "threshold": 5000000,
-   "enabled": true
-  },
-  {
-   "id": "hafu_low",
-   "name": "哈夫币少于阈值",
-   "metric": "hafu",
-   "op": "<",
-   "threshold": 100000,
-   "enabled": false
-  }
- ],
- "email": {
-  "enabled": true,
-  "mode": "server",
-  "server_url": "https://mhw.pub",
-  "server_token": "REPLACE_WITH_RELAY_TOKEN",
-  "smtp_host": "smtp.qq.com",
-  "smtp_port": 587,
-  "ssl": false,
-  "starttls": true,
-  "username": "",
-  "password": "",
-  "from_addr": "",
-  "to": [
-   "you@example.com"
+  "interval_s": 30,
+  "logic": "any",
+  "consecutive": 2,
+  "cooldown_s": 1800,
+  "action_mode": "email",
+  "rules": [
+    {
+      "id": "asset_high",
+      "name": "总资产高于阈值",
+      "metric": "asset",
+      "op": ">",
+      "threshold": 5000000,
+      "enabled": true
+    },
+    {
+      "id": "hafu_low",
+      "name": "哈夫币少于阈值",
+      "metric": "hafu",
+      "op": "<",
+      "threshold": 100000,
+      "enabled": false
+    }
   ],
-  "on": [
-   "trigger",
-   "freeze",
-   "unfreeze",
-   "collect_error",
-   "auth_error"
-  ]
- },
- "freeze": {
-  "account": "wechat",
-  "game": "三角洲行动",
-  "game_id": 2706
- },
- "paths": {
-  "collector_root": "F:\\workspace\\dfm-delta-collector",
-  "gamesafe_root": "F:\\workspace\\gamesafe-api",
-  "collector_config": "",
-  "gamesafe_cookies": ""
- }
+  "email": {
+    "enabled": true,
+    "mode": "server",
+    "server_url": "https://mhw.pub",
+    "server_token": "REPLACE_WITH_RELAY_TOKEN",
+    "smtp_host": "smtp.qq.com",
+    "smtp_port": 587,
+    "ssl": false,
+    "starttls": true,
+    "username": "",
+    "password": "",
+    "from_addr": "",
+    "to": [
+      "you@example.com"
+    ],
+    "on": [
+      "trigger",
+      "freeze",
+      "unfreeze",
+      "collect_error",
+      "auth_error"
+    ]
+  },
+  "freeze": {
+    "account": "wechat",
+    "game": "三角洲行动",
+    "game_id": 2706
+  },
+  "paths": {
+    "collector_root": "F:\\workspace\\dfm-delta-collector",
+    "gamesafe_root": "",
+    "collector_config": "",
+    "gamesafe_cookies": ""
+  }
 }
