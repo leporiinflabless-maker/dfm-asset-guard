@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.9</version>
+	<version>1.0.10</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.9</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.10</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>会话保活加固：登录态每 2 分钟持续刷新（不再等到临近过期才刷新）；重新授权抓取组件持续驻留，同一微信会话内可多次重新授权。\n操作说明同步更新。</contents_zh_cn>
-		<contents_en>Session keep-alive hardening: continuous token refresh every 2 minutes; the re-authorization capture DLL stays resident, allowing repeated re-authorization within one WeChat session. Manual updated.</contents_en>
-		<contents_zh_tw>會話保活加固：登入狀態每 2 分鐘持續重新整理（不再等到將近過期才刷新）；重新授權抓取元件持續駐留，同一微信會話內可多次重新授權。\n操作說明同步更新。</contents_zh_tw>
+		<contents_zh_cn>游戏冻结状态自动同步：冻结状态刷新与资产/哈夫币采集同频（每次采集同步刷新），外部解冻/冻结后悬浮窗与任务栏自动更新。\n操作说明同步更新。</contents_zh_cn>
+		<contents_en>Game freeze-status auto-sync: the freeze state refreshes in step with asset/Hafu collection (every collection cycle); the panel updates automatically after external freeze/unfreeze. Manual updated.</contents_en>
+		<contents_zh_tw>遊戲凍結狀態自動同步：凍結狀態重新整理與資產/哈夫幣採集同頻（每次採集同步重新整理），外部解凍/凍結後懸浮窗與工作列自動更新。\n操作說明同步更新。</contents_zh_tw>
 	</update_contents>
 </root>
