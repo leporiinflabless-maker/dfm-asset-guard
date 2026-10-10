@@ -53,8 +53,9 @@ dfm-guard/
   - 或命令行 `dfm-guard.exe reauth`；
   - 执行后按提示在微信里打开一次「腾讯游戏安全中心」页面（打开“冻结查询”停留几秒），
     抓取完成后自动写入并恢复登录态（无需 Python/frida）；
-  - ⚠ **微信版本依赖**：抓取组件挂钩微信 `flue.dll` 的固定偏移（当前适配 **RadiumWMPF flue 25715**）；
-    微信大版本升级后如抓取失效，需重新定位偏移（详见《操作说明.md》第八节）。
+  - ⚠ **微信版本依赖**：抓取组件适配 **微信 Windows 4.1.15**（XWeb/flue 运行时 25715）；
+    官方下载：https://dldir1v6.qq.com/weixin/Universal/Windows/WeChatWin_4.1.15.exe
+    其他版本可能不工作；微信升级后如抓取失效，需重新定位偏移（详见《操作说明.md》第八节）。
 
 ### 3. 组合使用
 解压整包后：先启动 `DFMMonitor.exe`（插件会自动拉起 `dfm-guard.exe`），即可看到实时数据。
