@@ -1,7 +1,13 @@
-# dfm-asset-guard · v1.0.33
+# dfm-asset-guard · v1.0.34
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.34 更新
+
+- **自动清理缓存页面**：登录态失效自动待命时，守卫会**自动清理微信中缓存的页面**——
+  关闭旧页面窗口并**重启页面渲染进程**（强制下次打开为全新加载，必定触发登录请求）——「打开服务号·自助服务即恢复」首次成功率更高；
+- 其余功能同 v1.0.33。
 
 ## v1.0.33 更新
 
@@ -217,7 +223,7 @@ dfm-guard/
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `48589f94dd278a22f947f779664b296c948d49aa485fd5dd3a5a31588ebf3a34` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `cc9e2a108003cc03f42514d68f638cd80e7b43e008f8a7dcdee235a766547fee` |
-| `dfm-guard\dfm-guard.exe` | 431,616 B | `a0c2c58f43ca7ae8073a7fcb29ea06a013273e7dd65af3cc9ed22854af856360` |
+| `dfm-guard\dfm-guard.exe` | 434,688 B | `6b8f72cef9f90c8f244a014d6f64a9b55f01fb1b3d5028a88e13e04b8928aaf4` |
 | `dfm-guard\dfm-authcap.dll` | 280,064 B | `c7a067bd7af111722b47fecb65720c6d21c1fa1a6cddea70b42de06ce1698602` |
 
 ## 使用说明
@@ -247,6 +253,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.34**（2026-10-11）：自动清理微信缓存页面（待命时自动关旧页面/重启页面进程，强制全新加载）；
 - **v1.0.33**（2026-10-11）：防缓存指引（打开页面未恢复时，关闭页面后重新打开一次）；
 - **v1.0.32**（2026-10-11）：登录态自动待命（启动后打开「腾讯游戏安全中心」服务号·自助服务即自动恢复，免手动重新授权）；
 - **v1.0.31**（2026-10-11）：重新授权集成干净重启注入（自动排除残留干扰后全新注入）；
