@@ -1,7 +1,14 @@
-# dfm-asset-guard · v1.0.30
+# dfm-asset-guard · v1.0.31
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.31 更新
+
+- **「重新授权」集成干净重启注入**：每次授权前自动①结束残留的等待进程、②重启微信网络进程
+  （卸载全部旧版/残留抓取组件，微信网络短暂重连属正常现象），随后全新注入——
+  彻底排除「旧实例残留组件」干扰导致的抓取失败；日志可见：「干净重启」「已干净注入（pid=…）」「组件已挂载确认」；
+- 其余功能同 v1.0.30。
 
 ## v1.0.30 更新
 
@@ -193,8 +200,8 @@ dfm-guard/
 | 文件 | 大小 | SHA256 |
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `997c4a286e2460f53a4b15eeede7c9e197a7478ea16ca7ae80c4550410909b79` |
-| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `d74263a009bc5492a549ee116af476afdb062f38d9e6fd313de225c60d2eafa7` |
-| `dfm-guard\dfm-guard.exe` | 423,424 B | `9bb8499754a11685ab6576bf0df313897007d3c0f7da2406bb463ed8f363faff` |
+| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `cc9e2a108003cc03f42514d68f638cd80e7b43e008f8a7dcdee235a766547fee` |
+| `dfm-guard\dfm-guard.exe` | 428,032 B | `ead5a45582b0f48004cd90b73bb6d53572df5fec6e7143837d24f23744e8eecb` |
 | `dfm-guard\dfm-authcap.dll` | 280,064 B | `c7a067bd7af111722b47fecb65720c6d21c1fa1a6cddea70b42de06ce1698602` |
 
 ## 使用说明
@@ -224,6 +231,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.31**（2026-10-11）：重新授权集成干净重启注入（自动排除残留干扰后全新注入）；
 - **v1.0.30**（2026-10-11）：代发地址与代发令牌设为出厂默认（新部署填收件邮箱即可用）；
 - **v1.0.29**（2026-10-11）：登录态恢复提速（重新授权后检测到 cookies.json 更新立即确认，提醒数秒内消失）；
 - **v1.0.28**（2026-10-11）：默认采集频率改为 3 秒（出厂默认；范围 3~600 秒，已有部署配置不变）；
