@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.19</version>
+	<version>1.0.20</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.19</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.20</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>稳定性修复：暂停监控不再停止会话保活；任意响应的新令牌立即落盘（防覆盖丢失）；邮件限频/触发冷却持久化（重启后不重复发提醒）。\n操作说明同步更新。</contents_zh_cn>
-		<contents_en>Stability fixes: pausing monitoring no longer stops session keep-alive; tokens from any response are persisted immediately; mail rate-limit/trigger cooldown persisted across restarts. Manual updated.</contents_en>
-		<contents_zh_tw>穩定性修復：暫停監控不再停止會話保活；任意回應的新權杖立即落盤（防覆蓋遺失）；郵件限頻/觸發冷卻持久化（重啟後不重複發提醒）。\n操作說明同步更新。</contents_zh_tw>
+		<contents_zh_cn>退出面板时自动停止守卫（优雅停止、几秒内结束）；重新打开面板自动再次拉起。注意：退出面板后监控与登录态保活会停止，需后台常驻请保持面板运行。\n操作说明同步更新。</contents_zh_cn>
+		<contents_en>Closing the panel now stops the guard service gracefully (relaunched when the panel is opened again). Note: monitoring and session keep-alive stop while the panel is closed. Manual updated.</contents_en>
+		<contents_zh_tw>關閉面板時自動停止守衛（優雅停止、數秒內結束）；重新開啟面板自動再次拉起。注意：關閉面板後監控與登入態保活會停止，需後台常駐請保持面板運行。\n操作說明同步更新。</contents_zh_tw>
 	</update_contents>
 </root>
