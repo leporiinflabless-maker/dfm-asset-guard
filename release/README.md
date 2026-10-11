@@ -1,7 +1,14 @@
-# dfm-asset-guard · v1.0.20
+# dfm-asset-guard · v1.0.21
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.21 更新
+
+- **注入钩子的生命周期管理**：应用（守卫）退出时自动通知抓取组件**释放已注入的钩子**（不再常驻残留）；
+  下一次「重新授权」会自动重新挂载（可重复授权不受影响）；
+- 释放时机：① 守卫退出（面板退出 → 守卫退出 → 自动释放）② 微信网络进程退出（随进程消失）③ 下次重新授权自动重挂；
+- 其余功能同 v1.0.20。
 
 ## v1.0.20 更新
 
@@ -126,8 +133,8 @@ dfm-guard/
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,908,736 B | `12124112c81dd22a0f4618a444879d260385b88c0d19afc8bf7a4bdc96574c51` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `b110bf336ecd1b58d32cbd5ac51075457d754fe3950135a483b246e7be61ff84` |
-| `dfm-guard\dfm-guard.exe` | 416,768 B | `510051a0c5811238c4e05be0c4ca8a0b28ee45b5832e967d735e83c638f0b8bd` |
-| `dfm-guard\dfm-authcap.dll` | 276,992 B | `70502933215788747f9623b229d5692e6b589086b7f4c7cc0329f2d316f571d1` |
+| `dfm-guard\dfm-guard.exe` | 417,280 B | `9a81396556bbeb18d24e2f32f75baa88d927aee19f318825d7502793a9f6dd7c` |
+| `dfm-guard\dfm-authcap.dll` | 279,040 B | `2d7deac139a3ab3c39d57a08c830094ba60af7bfa013fba3adbb513596475e2d` |
 
 ## 使用说明
 
@@ -156,6 +163,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.21**（2026-10-11）：注入钩子生命周期管理（守卫退出自动释放、重新授权自动重挂）；
 - **v1.0.20**（2026-10-11）：退出面板时自动停止守卫（重新打开面板自动拉起）；
 - **v1.0.19**（2026-10-11）：会话保活稳定性修复（暂停不停保活 / 令牌即时落盘 / 限频持久化）；
 - **v1.0.18**（2026-10-10）：清除剩余写死的开发机路径（CLI 默认配置 / 根目录兜底 / 去除 Python 回退）；
