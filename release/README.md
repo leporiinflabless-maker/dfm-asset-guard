@@ -1,7 +1,13 @@
-# dfm-asset-guard · v1.0.23
+# dfm-asset-guard · v1.0.24
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.24 更新
+
+- **自动刷新账号列表**：登录态恢复（含完成「重新授权」）后，守卫**自动刷新账号列表**；
+  首次运行（列表缺失）且登录态可用时也会自动生成——不再需要手动点「刷新账号列表」；
+- 其余功能同 v1.0.23。
 
 ## v1.0.23 更新
 
@@ -146,7 +152,7 @@ dfm-guard/
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `997c4a286e2460f53a4b15eeede7c9e197a7478ea16ca7ae80c4550410909b79` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `dc356cf7b74a2325217c978cb8e72d2cdfe19e46d4061b82c3d6fa6cd2b0bf90` |
-| `dfm-guard\dfm-guard.exe` | 417,792 B | `36c30d2ba2b70a4cfc5f3bab54f804721b5cac4e3ba1399689571c89c3bf9881` |
+| `dfm-guard\dfm-guard.exe` | 418,816 B | `00d7003c28244c75564ef3d400781760172e5a36f54a1961e8c645042a1fe917` |
 | `dfm-guard\dfm-authcap.dll` | 279,040 B | `2d7deac139a3ab3c39d57a08c830094ba60af7bfa013fba3adbb513596475e2d` |
 
 ## 使用说明
@@ -176,6 +182,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.24**（2026-10-11）：登录态恢复后自动刷新账号列表（首次运行自动生成）；
 - **v1.0.23**（2026-10-11）：修复更新检查误报（比较整包版本 version.txt）；面板内嵌版本升级；
 - **v1.0.22**（2026-10-11）：宿主看护（面板退出/强杀/崩溃 → 守卫数秒内自动停止；重开面板立即拉起）；
 - **v1.0.21**（2026-10-11）：注入钩子生命周期管理（守卫退出自动释放、重新授权自动重挂）；
