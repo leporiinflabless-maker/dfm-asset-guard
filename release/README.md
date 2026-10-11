@@ -1,7 +1,15 @@
-# dfm-asset-guard · v1.0.35
+# dfm-asset-guard · v1.0.36
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.36 更新
+
+- **安全加固（编译期）**：三个程序启用 **CFG**（控制流保护）、**Spectre** 缓解、**SDL** 检查、**ASLR 高熵地址**（DYNAMICBASE/NXCOMPAT/HIGHENTROPYVA/GS）、**CET** 兼容（主程序）；
+- **安全加固（代码级）**：关键字符串（域名/接口路径/字段名/日志文本）改为**编译期加密、运行期解密**——不再以明文出现在二进制中；
+- **注入前组件校验**：守卫注入前校验 `dfm-authcap.dll` 的 **SHA-256**（与内置期望值比对），不一致时拒绝注入并告警——防替换/篡改（`DFM_SKIP_DLL_VERIFY=1` 可临时跳过）；
+- **构建路径清理**：清除二进制中的开发机路径（PDB 路径 / 源码路径前缀）；
+- 其余功能同 v1.0.35。
 
 ## v1.0.35 更新
 
@@ -229,10 +237,10 @@ dfm-guard/
 
 | 文件 | 大小 | SHA256 |
 |---|---|---|
-| `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `48589f94dd278a22f947f779664b296c948d49aa485fd5dd3a5a31588ebf3a34` |
-| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `cc9e2a108003cc03f42514d68f638cd80e7b43e008f8a7dcdee235a766547fee` |
-| `dfm-guard\dfm-guard.exe` | 439,296 B | `0a710b1d036582d321023ab3ae7e621a4c2547affce2bd0251d26367f90c3261` |
-| `dfm-guard\dfm-authcap.dll` | 280,064 B | `c7a067bd7af111722b47fecb65720c6d21c1fa1a6cddea70b42de06ce1698602` |
+| `DFMMonitor\DFMMonitor.exe` | 1,917,952 B | `6804c6709d00ec724c5d8ce39cb5911a0a03aa40b942e9f978969a31041a7663` |
+| `DFMMonitor\plugins\DeltaGuard.dll` | 67,584 B | `79f8dd92473023056a3d955ff503d9cd59c0ed425c8f884443095828afad4426` |
+| `dfm-guard\dfm-guard.exe` | 463,360 B | `e6dad62247c71b226bd78d4375c2ea654ae475a340b2198fd2bc984c904b42c6` |
+| `dfm-guard\dfm-authcap.dll` | 293,376 B | `c3af89671e49e2cd3ce9c511203bca5d2fc3346830cf1ee0a87696e248813bfd` |
 
 ## 使用说明
 
@@ -261,6 +269,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.36**（2026-10-11）：安全加固（CFG/Spectre/SDL/CET + 字符串加密 + 注入前哈希校验 + 路径清理）；
 - **v1.0.35**（2026-10-11）：待命改为干净重启注入（避免挂钩磨损）+ 自动关闭覆盖微信主进程页面窗口 + 日志落盘；
 - **v1.0.34**（2026-10-11）：自动清理微信缓存页面（待命时自动关旧页面/重启页面进程，强制全新加载）；
 - **v1.0.33**（2026-10-11）：防缓存指引（打开页面未恢复时，关闭页面后重新打开一次）；
