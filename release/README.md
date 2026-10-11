@@ -1,7 +1,14 @@
-# dfm-asset-guard · v1.0.22
+# dfm-asset-guard · v1.0.23
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.23 更新
+
+- **修复「误报升级」**：更新检查改为比较**整包版本**（随包分发的 `version.txt` 优先，面板内嵌版本作兜底）——
+  面板 exe 自身版本落后于整包版本时不再误报（实测：v.txt 落后则正常提示、一致则无提示）；
+- 面板内嵌版本同步升级；发布包新增 `version.txt`（每次发版随包更新）；
+- 其余功能同 v1.0.22。
 
 ## v1.0.22 更新
 
@@ -137,7 +144,7 @@ dfm-guard/
 
 | 文件 | 大小 | SHA256 |
 |---|---|---|
-| `DFMMonitor\DFMMonitor.exe` | 1,908,736 B | `12124112c81dd22a0f4618a444879d260385b88c0d19afc8bf7a4bdc96574c51` |
+| `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `997c4a286e2460f53a4b15eeede7c9e197a7478ea16ca7ae80c4550410909b79` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `dc356cf7b74a2325217c978cb8e72d2cdfe19e46d4061b82c3d6fa6cd2b0bf90` |
 | `dfm-guard\dfm-guard.exe` | 417,792 B | `36c30d2ba2b70a4cfc5f3bab54f804721b5cac4e3ba1399689571c89c3bf9881` |
 | `dfm-guard\dfm-authcap.dll` | 279,040 B | `2d7deac139a3ab3c39d57a08c830094ba60af7bfa013fba3adbb513596475e2d` |
@@ -169,6 +176,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.23**（2026-10-11）：修复更新检查误报（比较整包版本 version.txt）；面板内嵌版本升级；
 - **v1.0.22**（2026-10-11）：宿主看护（面板退出/强杀/崩溃 → 守卫数秒内自动停止；重开面板立即拉起）；
 - **v1.0.21**（2026-10-11）：注入钩子生命周期管理（守卫退出自动释放、重新授权自动重挂）；
 - **v1.0.20**（2026-10-11）：退出面板时自动停止守卫（重新打开面板自动拉起）；
