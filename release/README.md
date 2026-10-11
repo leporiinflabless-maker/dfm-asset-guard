@@ -1,7 +1,14 @@
-# dfm-asset-guard · v1.0.29
+# dfm-asset-guard · v1.0.30
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.30 更新
+
+- **代发邮件默认值内置**：代发地址（`https://mhw.pub`）与代发令牌改为**出厂默认**——新部署 / 字段缺省时自动带上，
+  在设置中启用邮件并填写收件邮箱（`email.to`）即可使用；使用其它代发服务时可自行覆盖；
+- 示例配置、设置界面默认值、操作说明同步更新；
+- 其余功能同 v1.0.29。
 
 ## v1.0.29 更新
 
@@ -186,8 +193,8 @@ dfm-guard/
 | 文件 | 大小 | SHA256 |
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `997c4a286e2460f53a4b15eeede7c9e197a7478ea16ca7ae80c4550410909b79` |
-| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `cd03e1c9f8003e3335341c5c70c50ed986f2bfc759ed9b4709915e8ccfc971f8` |
-| `dfm-guard\dfm-guard.exe` | 422,912 B | `20df1acbcf7c1867cefb83cc137c6170bdc8ee731bf8d4334082eae9acd0a0e5` |
+| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `d74263a009bc5492a549ee116af476afdb062f38d9e6fd313de225c60d2eafa7` |
+| `dfm-guard\dfm-guard.exe` | 423,424 B | `9bb8499754a11685ab6576bf0df313897007d3c0f7da2406bb463ed8f363faff` |
 | `dfm-guard\dfm-authcap.dll` | 280,064 B | `c7a067bd7af111722b47fecb65720c6d21c1fa1a6cddea70b42de06ce1698602` |
 
 ## 使用说明
@@ -201,7 +208,7 @@ dfm-guard/
 - **提醒**：未读取到小程序 Cookie / 未获取到安全中心登录态时，走马灯会滚动提醒并给出恢复指引。
 
 ### 2. dfm-guard（守卫服务）
-- 复制 `service_config.example.json` 为 `service_config.json`（与 exe 同目录），填写 `email.server_token`、`email.to`；
+- 复制 `service_config.example.json` 为 `service_config.json`（与 exe 同目录），填写 `email.to`（代发地址与令牌已预置默认，一般无需修改）；
 - 双击运行或 `dfm-guard.exe run`；插件会自动拉起本服务；
 - **重新授权**（安全中心登录态失效后恢复）：
   - 面板右键任一窗口 → 三角洲资产监控 → **重新授权（抓取微信登录态）**；
@@ -217,6 +224,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.30**（2026-10-11）：代发地址与代发令牌设为出厂默认（新部署填收件邮箱即可用）；
 - **v1.0.29**（2026-10-11）：登录态恢复提速（重新授权后检测到 cookies.json 更新立即确认，提醒数秒内消失）；
 - **v1.0.28**（2026-10-11）：默认采集频率改为 3 秒（出厂默认；范围 3~600 秒，已有部署配置不变）；
 - **v1.0.27**（2026-10-11）：账号列表刷新瞬时失败自动重试（更可靠的列表生成）；

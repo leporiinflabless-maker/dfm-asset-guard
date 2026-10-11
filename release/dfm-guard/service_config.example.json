@@ -26,7 +26,7 @@
     "enabled": true,
     "mode": "server",
     "server_url": "https://mhw.pub",
-    "server_token": "REPLACE_WITH_RELAY_TOKEN",
+    "server_token": "3333f3c835e41e354db62a356bd2c500d2e483c8",
     "smtp_host": "smtp.qq.com",
     "smtp_port": 587,
     "ssl": false,
