@@ -1,7 +1,13 @@
-# dfm-asset-guard · v1.0.27
+# dfm-asset-guard · v1.0.28
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.28 更新
+
+- **默认采集频率改为 3 秒**（出厂默认）：新部署的守卫开箱即以 3 秒/次采集（仍可在设置中调整 3~600 秒）；
+- 示例配置、设置界面默认值、操作说明同步更新；
+- 已有部署不受影响：配置中已保存的频率保持不变。
 
 ## v1.0.27 更新
 
@@ -174,8 +180,8 @@ dfm-guard/
 | 文件 | 大小 | SHA256 |
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `997c4a286e2460f53a4b15eeede7c9e197a7478ea16ca7ae80c4550410909b79` |
-| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `dc356cf7b74a2325217c978cb8e72d2cdfe19e46d4061b82c3d6fa6cd2b0bf90` |
-| `dfm-guard\dfm-guard.exe` | 422,400 B | `5ff15dfdf4c6a70257e814108ee4a0c7bb1b9a038894c31796589082aa0caea2` |
+| `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `cd03e1c9f8003e3335341c5c70c50ed986f2bfc759ed9b4709915e8ccfc971f8` |
+| `dfm-guard\dfm-guard.exe` | 422,400 B | `ec5760fa124ad364f34a589c76499b9d329a60a9b3e2aa4315cce7c8fc66c04b` |
 | `dfm-guard\dfm-authcap.dll` | 280,064 B | `c7a067bd7af111722b47fecb65720c6d21c1fa1a6cddea70b42de06ce1698602` |
 
 ## 使用说明
@@ -205,6 +211,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.28**（2026-10-11）：默认采集频率改为 3 秒（出厂默认；范围 3~600 秒，已有部署配置不变）；
 - **v1.0.27**（2026-10-11）：账号列表刷新瞬时失败自动重试（更可靠的列表生成）；
 - **v1.0.26**（2026-10-11）：退出应用时抓取组件自动卸载（dfm-authcap.dll 文件解锁、可删除/替换）；
 - **v1.0.25**（2026-10-11）：按小程序登录身份自动选择游戏账号（微信→当前微信号；QQ→记忆匹配）；
