@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.24</version>
+	<version>1.0.25</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.24</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.25</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>登录态恢复（含完成重新授权）后自动刷新账号列表；首次运行且登录态可用时自动生成列表，无需手动点击。\n操作说明同步更新。</contents_zh_cn>
-		<contents_en>Account list is refreshed automatically after the login state recovers (incl. after re-authorization); generated automatically on first run when the session is valid. Manual updated.</contents_en>
-		<contents_zh_tw>登入態恢復（含完成重新授權）後自動重新整理帳號列表；首次執行且登入態可用時自動產生列表，無需手動點擊。\n操作說明同步更新。</contents_zh_tw>
+		<contents_zh_cn>按小程序登录身份自动选择游戏账号：微信登录自动选「当前微信号」；QQ 登录采用记忆匹配（为该角色选过一次后自动记住）。\n操作说明同步更新。</contents_zh_cn>
+		<contents_en>Auto-select the game account by the mini-program login identity: WeChat login -> "Current WeChat" entry; QQ login -> remembers the account you picked for that character. Manual updated.</contents_en>
+		<contents_zh_tw>依小程式登入身分自動選擇遊戲帳號：微信登入自動選「目前微信號」；QQ 登入採用記憶匹配（為該角色選過一次後自動記住）。\n操作說明同步更新。</contents_zh_tw>
 	</update_contents>
 </root>

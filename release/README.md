@@ -1,7 +1,17 @@
-# dfm-asset-guard · v1.0.24
+# dfm-asset-guard · v1.0.25
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.25 更新
+
+- **按小程序登录身份自动选择游戏账号**：
+  - 微信快捷登录 → 自动选中账号列表中的「当前微信号」；
+  - QQ 登录 → 采用**记忆匹配**：在设置中为该角色选择过一次账号后，守卫记住（登录身份 → 账号），
+    以后同一角色登录自动选中；
+  - 说明：小程序与安全中心的 openid 属不同应用、接口无账号号字段，无法直接做「角色名 ↔ QQ号」匹配——
+    故采用上述「确定性规则 + 记忆」方案；
+- 其余功能同 v1.0.24。
 
 ## v1.0.24 更新
 
@@ -152,7 +162,7 @@ dfm-guard/
 |---|---|---|
 | `DFMMonitor\DFMMonitor.exe` | 1,910,272 B | `997c4a286e2460f53a4b15eeede7c9e197a7478ea16ca7ae80c4550410909b79` |
 | `DFMMonitor\plugins\DeltaGuard.dll` | 67,072 B | `dc356cf7b74a2325217c978cb8e72d2cdfe19e46d4061b82c3d6fa6cd2b0bf90` |
-| `dfm-guard\dfm-guard.exe` | 418,816 B | `00d7003c28244c75564ef3d400781760172e5a36f54a1961e8c645042a1fe917` |
+| `dfm-guard\dfm-guard.exe` | 422,400 B | `3c5c2446ddaed8c6cd986b81cc3fadb0d6a8876407b4db00b1bae4d7edfffd34` |
 | `dfm-guard\dfm-authcap.dll` | 279,040 B | `2d7deac139a3ab3c39d57a08c830094ba60af7bfa013fba3adbb513596475e2d` |
 
 ## 使用说明
@@ -182,6 +192,7 @@ dfm-guard/
 
 ## 版本
 
+- **v1.0.25**（2026-10-11）：按小程序登录身份自动选择游戏账号（微信→当前微信号；QQ→记忆匹配）；
 - **v1.0.24**（2026-10-11）：登录态恢复后自动刷新账号列表（首次运行自动生成）；
 - **v1.0.23**（2026-10-11）：修复更新检查误报（比较整包版本 version.txt）；面板内嵌版本升级；
 - **v1.0.22**（2026-10-11）：宿主看护（面板退出/强杀/崩溃 → 守卫数秒内自动停止；重开面板立即拉起）；
