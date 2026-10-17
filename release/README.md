@@ -1,7 +1,20 @@
-# dfm-asset-guard · v1.0.37
+# dfm-asset-guard · v1.0.38
 
 > 三角洲行动资产监控与自动冻结系统 —— Windows x64 预编译包（2026-10-10）。
 > 仓库：https://gitee.com/mhwpub/dfm-asset-guard ｜ https://github.com/leporiinflabless-maker/dfm-asset-guard
+
+## v1.0.38 更新
+
+- **小程序登录态自动恢复（全自动）**：登录态失效（`auth_expired`，或持续 `-108` 限流）时，守卫自动
+  在后台打开「三角洲行动」小程序并进入「我的」页，让小程序把新凭证写回微信本地存储；
+  随后重新读取微信存储、探测并写回 `config.json`——**无需再手动打开微信小程序**；
+- **触发策略**：`auth_expired` 立即触发；`-108` 连续 4 次失败视为会话失效触发；
+  两次自动拉起至少间隔 15 分钟（`applet.cooldown_s` 可调），避免反复弹窗；
+- **失败自动降级**：未安装 Python/frida 或启动器缺失时自动跳过，仍按原方式提醒手动打开小程序；
+- **新增命令**：`dfm-guard.exe open-applet` —— 手动触发一次后台打开小程序并进入「我的」；
+- **可观测**：`events.jsonl` 新增 `auth_refresh` 事件；启动器输出写入 `applet_launch.log`；
+- **配置新增 `applet` 段**（`enabled/python/script/appid/wait_s/cooldown_s`），缺省即启用，
+  `"enabled": false` 可关闭；其余功能同 v1.0.37。
 
 ## v1.0.37 更新
 

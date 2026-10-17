@@ -1,24 +1,24 @@
 ﻿<root>
-	<version>1.0.37</version>
+	<version>1.0.38</version>
 	<GitHub>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_without_temperature_arm64ec>
 	</GitHub>
 	<Gitee>
-		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link>
-		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_x64>
-		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_arm64ec>
-		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_without_temperature>
-		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_without_temperature_x64>
-		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.37</link_without_temperature_arm64ec>
+		<link>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link>
+		<link_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_x64>
+		<link_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_arm64ec>
+		<link_without_temperature>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_without_temperature>
+		<link_without_temperature_x64>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_without_temperature_x64>
+		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>重新授权智能升级链：事件驱动判断（挂钩就绪确认 / 页面事件驱动 / 进程健康监测），缓存页自动关窗重开、失败立即升级重建，不再空等超时。</contents_zh_cn>
-		<contents_en>Smart re-auth escalation chain: event-driven detection (hook readiness, page events, process health); cached pages auto closed/reopened and instant escalation on failures instead of timeout waiting.</contents_en>
-		<contents_zh_tw>重新授權智能升級鏈：事件驅動判斷（掛鉤就緒確認 / 頁面事件驅動 / 程序健康監測），快取頁自動關窗重開、失敗立即升級重建，不再空等逾時。</contents_zh_tw>
+		<contents_zh_cn>小程序登录态全自动恢复：失效时自动后台打开「三角洲行动」小程序并进入「我的」页，让小程序把新凭证写回微信本地存储后重新读取恢复，无需再手动打开小程序；未装 Python/frida 时自动跳过。</contents_zh_cn>
+		<contents_en>Fully automatic mini-program session recovery: on expiry, the guard opens the Delta mini program and its "Me" page in the background so fresh credentials are written back to WeChat storage, then reloads them; falls back gracefully when Python/frida is unavailable.</contents_en>
+		<contents_zh_tw>小程式登入態全自動恢復：失效時自動於背景開啟「三角洲行動」小程式並進入「我的」頁，讓小程式把新憑證寫回微信本機儲存後重新讀取恢復，無需再手動開啟小程式；未安裝 Python/frida 時自動略過。</contents_zh_tw>
 	</update_contents>
 </root>

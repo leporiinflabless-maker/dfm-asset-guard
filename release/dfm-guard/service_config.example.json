@@ -55,5 +55,13 @@
     "gamesafe_root": "",
     "collector_config": "",
     "gamesafe_cookies": ""
+  },
+  "applet": {
+    "enabled": true,
+    "python": "",
+    "script": "",
+    "appid": "wx1c36464bbea2507a",
+    "wait_s": 30,
+    "cooldown_s": 900
   }
 }
