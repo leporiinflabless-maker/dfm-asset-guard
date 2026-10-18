@@ -17,8 +17,8 @@
 		<link_without_temperature_arm64ec>https://gitee.com/mhwpub/dfm-asset-guard/releases/tag/v1.0.38</link_without_temperature_arm64ec>
 	</Gitee>
 	<update_contents>
-		<contents_zh_cn>登录态全自动恢复：小程序失效时自动后台打开「三角洲行动」并进入「我的」；安全中心登录态失效时通过原生组件（无需 Python）自动打开服务号「自助服务」页（非模拟点击、静默授权重登），凭证写回/抓取后自动恢复。</contents_zh_cn>
-		<contents_en>Fully automatic session recovery: opens the Delta mini program ("Me" page) when its session expires, and natively (no Python) opens the official account's "Self-service" page (no simulated clicks, silent OAuth re-login) when the Game Security Center session expires.</contents_en>
-		<contents_zh_tw>登入態全自動恢復：小程式失效時自動於背景開啟「三角洲行動」並進入「我的」；安全中心登入態失效時透過原生元件（無需 Python）自動開啟服務號「自助服務」頁（非模擬點擊、靜默授權重登），憑證寫回/擷取後自動恢復。</contents_zh_tw>
+		<contents_zh_cn>登录态全自动恢复（原生实现，无需 Python/frida）：小程序失效时自动后台启动「三角洲行动」（启动即刷新令牌）；安全中心登录态失效时自动打开服务号「自助服务」页（非模拟点击、静默授权重登），凭证写回/抓取后自动恢复。</contents_zh_cn>
+		<contents_en>Fully automatic session recovery, natively (no Python/frida): launches the Delta mini program when its session expires (tokens refresh on launch), and opens the official account's "Self-service" page (no simulated clicks, silent OAuth re-login) when the Game Security Center session expires.</contents_en>
+		<contents_zh_tw>登入態全自動恢復（原生實作，無需 Python/frida）：小程式失效時自動於背景啟動「三角洲行動」（啟動即刷新令牌）；安全中心登入態失效時自動開啟服務號「自助服務」頁（非模擬點擊、靜默授權重登），憑證寫回/擷取後自動恢復。</contents_zh_tw>
 	</update_contents>
 </root>
