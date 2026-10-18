@@ -63,5 +63,10 @@
     "appid": "wx1c36464bbea2507a",
     "wait_s": 30,
     "cooldown_s": 900
+  },
+  "gamesafe": {
+    "auto_open": true,
+    "url": "",
+    "cooldown_s": 600
   }
 }
